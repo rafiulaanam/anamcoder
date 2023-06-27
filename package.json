@@ -1,0 +1,28 @@
+{
+  "name": "anamcoder",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "git": "git add . && git commit -m'contact-emailjs-added' && git push"
+  },
+  "dependencies": {
+    "autoprefixer": "10.4.14",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "next": "13.4.7",
+    "postcss": "8.4.24",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scroll": "^1.8.9",
+    "react-icons": "^4.8.0",
+    "react-simple-typewriter": "^5.0.1",
+    "tailwindcss": "3.3.2"
+  },
+  "devDependencies": {
+    "daisyui": "^3.1.6"
+  }
+}
