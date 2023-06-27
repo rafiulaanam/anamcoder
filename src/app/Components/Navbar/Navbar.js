@@ -9,7 +9,8 @@ import Button from "../../utils/Button/Button";
 const Navbar = () => {
   const [glossy, setGlass] = useState(false);
 
-  const scrollValue = document.documentElement.scrollTop;
+  // const scrollValue = document.documentElement.scrollTop;
+  let scrollValue
 
   const changeScroll = () => {
     if (scrollValue > 50) {
