@@ -20,7 +20,7 @@ const Education = () => {
           <div className="flex-grow pl-4">
             <h2 className="font-semibold title-font text-lg text-[#72E2AE] mb-1 tracking-wider">Bachelor in Computer Science and Engineering</h2>
             <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">Metropolitan University.  <span className='italic text-xs' >(2022 - Present)</span></h2>
-            <p className="leading-relaxed text-gray-300">I am started doing study at this University from 2022 to now. It's a great chance to access different type of technology. </p>
+            <p className="leading-relaxed text-gray-300">I am started doing study at this University from 2022 to now. Its a great chance to access different type of technology. </p>
           </div>
         </div>
         <div className="flex relative pb-12">
@@ -51,7 +51,7 @@ const Education = () => {
           <div className="flex-grow pl-4">
           <h2 className="font-semibold title-font text-lg text-[#72E2AE] mb-1 tracking-wider">Secondary School Graduation</h2>
             <h2 className="font-medium title-font text-sm text-white mb-1 tracking-wider">Scholarshome.  <span className='italic text-xs' >(2016 - 2018)</span></h2>
-            <p className="leading-relaxed text-gray-300">This is the time we confused than which group we should select. As I want to become a Software Engineer that's why I choose this group. I got GPA 4.56 out of 5.00 </p>
+            <p className="leading-relaxed text-gray-300">This is the time we confused than which group we should select. As I want to become a Software Engineer thats why I choose this group. I got GPA 4.56 out of 5.00 </p>
           </div>
         </div>
         <div className="flex relative pb-12">
