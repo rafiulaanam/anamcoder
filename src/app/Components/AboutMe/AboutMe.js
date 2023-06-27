@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import "./AboutMe.css";
 import Title from "@/app/utils/Title/Title";

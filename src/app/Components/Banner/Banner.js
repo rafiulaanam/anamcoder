@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 // import rafi from "../../Assets/rafi.png";
@@ -31,8 +30,7 @@ const Banner = () => {
 
             <div className="flex flex-col text-gray-700mt-5">
               <h1 className="text-4xl text-white md:text-[50px] font-bold h-32 md:h-10">
-                Hi, I am{" "}
-                <br className="md:hidden"/>
+                Hi, I am <br className="md:hidden" />
                 <span className="text-[#72E2AE]">
                   <Typewriter
                     words={[
@@ -58,8 +56,10 @@ const Banner = () => {
               </p>
             </div>
             <p className="mt-4 text-md font-semibold text-gray-200 md:w-[70%] tracking-wide leading-7">
-            A passionate Full Stack Software Developer 🚀 having a special interest in Frontend technologies and experience of building clean code and pixel
-              perfect Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.
+              A passionate Full Stack Software Developer 🚀 having a special
+              interest in Frontend technologies and experience of building clean
+              code and pixel perfect Web applications with JavaScript / Reactjs
+              / Nodejs and some other cool libraries and frameworks.
             </p>
             <div className="space-x-3 mt-6 md:mt-4 text-white flex">
               <a
@@ -121,16 +121,24 @@ const Banner = () => {
               </a> */}
             </div>
             <div className="flex mt-10 space-x-5">
-            <a href="https://github.com/rafiulaanam" target="_blank" rel="noreferrer">
-            <button className="bg-white text-blue-900 px-6 py-2 hover:brightness-105 font-semibold">
-                View on Github
-              </button>
-            </a>
-            <a href="https://www.linkedin.com/in/rafiulaanam/" target="_blank" rel="noreferrer">
-            <button className="bg-blue-900 text-white border-2 border-white px-6 py-2 hover:brightness-105 font-semibold">
-               View on LinkedIn
-              </button>
-            </a>
+              <a
+                href="https://github.com/rafiulaanam"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="bg-white text-blue-900 px-6 py-2 hover:brightness-105 font-semibold">
+                  View on Github
+                </button>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/rafiulaanam/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="bg-blue-900 text-white border-2 border-white px-6 py-2 hover:brightness-105 font-semibold">
+                  View on LinkedIn
+                </button>
+              </a>
             </div>
           </div>
         </div>

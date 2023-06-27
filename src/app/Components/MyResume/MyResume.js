@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Certification from "../Certification";
 import Education from "../Education";

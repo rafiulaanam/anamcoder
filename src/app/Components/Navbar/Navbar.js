@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -8,27 +7,28 @@ import Button from "../../utils/Button/Button";
 // import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Navbar = () => {
+  const [glossy, setGlass] = useState(false);
 
+  const scrollValue = document.documentElement.scrollTop;
 
-  const [glossy, setGlass] = useState(false)
-
-  const scrollValue = document.documentElement.scrollTop
-
- const changeScroll =()=>{
-  if (scrollValue>50){
-    setGlass(true)
-  }
-  else{
-    setGlass(false)
-  }
- }
-window.addEventListener('scroll' , changeScroll)
+  const changeScroll = () => {
+    if (scrollValue > 50) {
+      setGlass(true);
+    } else {
+      setGlass(false);
+    }
+  };
+  window.addEventListener("scroll", changeScroll);
 
   const menuItems = (
     <>
       <li>
         <Link
-          to="Header" spy={true} smooth={true} offset={-130} duration={1000}
+          to="Header"
+          spy={true}
+          smooth={true}
+          offset={-130}
+          duration={1000}
           className="mr-3 hover-underline-animation  font-medium text-sm text-white"
         >
           <span className="text-[#72E2AE]">01.</span> HOME
@@ -36,7 +36,11 @@ window.addEventListener('scroll' , changeScroll)
       </li>
       <li>
         <Link
-          to="About" spy={true} smooth={true} offset={-30} duration={1000}
+          to="About"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={1000}
           className="mr-3 hover-underline-animation font-medium text-sm text-white"
         >
           <span className="text-[#72E2AE]">02.</span> ABOUT
@@ -44,7 +48,11 @@ window.addEventListener('scroll' , changeScroll)
       </li>
       <li>
         <Link
-          to="Resume" spy={true} smooth={true} offset={-30} duration={1000}
+          to="Resume"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={1000}
           className="mr-3 hover-underline-animation font-medium text-sm text-white"
         >
           <span className="text-[#72E2AE]">03.</span> RESUME
@@ -52,7 +60,11 @@ window.addEventListener('scroll' , changeScroll)
       </li>
       <li>
         <Link
-          to="Work" spy={true} smooth={true} offset={-30} duration={1000}
+          to="Work"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={1000}
           className="mr-3 hover-underline-animation font-medium text-sm text-white"
         >
           <span className="text-[#72E2AE]">04.</span> WORK
@@ -60,7 +72,11 @@ window.addEventListener('scroll' , changeScroll)
       </li>
       <li>
         <Link
-          to="Blog" spy={true} smooth={true} offset={-30} duration={1000}
+          to="Blog"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={1000}
           className="mr-3 hover-underline-animation font-medium text-sm text-white"
         >
           <span className="text-[#72E2AE]">05.</span> BLOG
@@ -68,7 +84,11 @@ window.addEventListener('scroll' , changeScroll)
       </li>
       <li>
         <Link
-          to="Contact" spy={true} smooth={true} offset={-30} duration={1000}
+          to="Contact"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={1000}
           className="mr-3 hover-underline-animation font-medium text-sm text-white"
         >
           <span className="text-[#72E2AE]">06.</span> CONTACT
@@ -77,9 +97,8 @@ window.addEventListener('scroll' , changeScroll)
     </>
   );
 
- 
   return (
-    <div  className={glossy ? "glossy ": "yy"}>
+    <div className={glossy ? "glossy " : "yy"}>
       <div className="navbar container mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -114,11 +133,14 @@ window.addEventListener('scroll' , changeScroll)
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
         <div className="navbar-end">
-          <a href="https://www.linkedin.com/in/rafiulaanam/" target="_blank"   rel="noopener noreferrer">
-
-          <Button text='Hire me'/>
+          <a
+            href="https://www.linkedin.com/in/rafiulaanam/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button text="Hire me" />
           </a>
-          </div>
+        </div>
       </div>
     </div>
   );
