@@ -6,7 +6,10 @@ const nextConfig = {
       "img.icons8.com",
       "www.rlogical.com",
       "upload.wikimedia.org",
-      "i.ibb.co"
+      "i.ibb.co",
+      "exd84vez8fu.exactdn.com",
+      "media.designrush.com",
+      "reactjsexample.com"
     ], // Add the hostname here
   },
 };

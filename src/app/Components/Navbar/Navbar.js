@@ -19,7 +19,7 @@ const Navbar = () => {
       setGlass(false);
     }
   };
-  window.addEventListener("scroll", changeScroll);
+  // window.addEventListener("scroll", changeScroll);
 
   const menuItems = (
     <>
