@@ -20,7 +20,7 @@ const MyWorks = () => {
               />
               <div className="card-body">
                 <h2 className="card-title  text-white">Codepen Clone</h2>
-                <p className="text-gray-400">
+                <span className="text-gray-400">
                   <ul>
                     <li>
                       • Designed & Developed a Web App with back-end using Rapid
@@ -31,7 +31,7 @@ const MyWorks = () => {
                       website online.
                     </li>
                   </ul>
-                </p>
+                </span>
                 <div className="card-actions justify-end">
                   <a
                     href="https://github.com/rafiulaanam/codepen-clone"
@@ -64,7 +64,7 @@ const MyWorks = () => {
               />
               <div className="card-body">
                 <h2 className="card-title  text-white">PhoneFly</h2>
-                <p className="text-gray-400">
+                <span className="text-gray-400">
                   <ul>
                     <li>
                       • Designed & Developed a Web App with back-end on Node Js,
@@ -76,7 +76,7 @@ const MyWorks = () => {
                       can display update & delete sellers & buyers.
                     </li>
                   </ul>
-                </p>
+                </span>
                 <div className="card-actions justify-end">
                   <a
                     href="https://github.com/rafiulaanam/PhoneFly"
@@ -109,7 +109,7 @@ const MyWorks = () => {
               />
               <div className="card-body">
                 <h2 className="card-title  text-white">Doctors Portal</h2>
-                <p className="text-gray-400">
+                <span className="text-gray-400">
                   <ul>
                     <li>
                       • Designed & Developed a Web App with back-end on Node Js,
@@ -122,7 +122,7 @@ const MyWorks = () => {
                       doctors.
                     </li>
                   </ul>
-                </p>
+                </span>
                 <div className="card-actions justify-end">
                   <a
                     href="https://github.com/rafiulaanam/doctors-portal"
