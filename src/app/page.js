@@ -1,6 +1,6 @@
 'use client'
 
-import AboutMe from "./components/AboutMe/AboutMe.js";
+import AboutMe from "./components/AboutMe/about";
 import Banner from "./components/Banner/Banner";
 import ClientReviews from "./components/ClientReviews/ClientReviews";
 import ContactMe from "./components/ContactMe/ContactMe";
