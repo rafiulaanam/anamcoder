@@ -1,12 +1,13 @@
-import AboutMe from "./Components/AboutMe/AboutMe";
-import Banner from "./Components/Banner/Banner";
-import ClientReviews from "./Components/ClientReviews/ClientReviews";
-import ContactMe from "./Components/ContactMe/ContactMe";
-import LatestBlogs from "./Components/LatestBlogs/LatestBlogs";
-import MyAllSkills from "./Components/MyAllSkills/MyAllSkills";
-import MyResume from "./Components/MyResume/MyResume";
-import MyServices from "./Components/MyServices/MyServices";
-import MyWorks from "./Components/MyWorks/MyWorks";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Banner from "./components/Banner/Banner";
+import ClientReviews from "./components/ClientReviews/ClientReviews";
+import ContactMe from "./components/ContactMe/ContactMe";
+import LatestBlogs from "./components/LatestBlogs/LatestBlogs";
+import MyAllSkills from "./components/MyAllSkills/MyAllSkills";
+import MyPortfolio from "./components/MyPortfolio/MyPortfolio";
+import MyResume from "./components/MyResume/MyResume";
+import MyServices from "./components/MyServices/MyServices";
+import MyWorks from "./components/MyWorks/MyWorks";
 
 export default function Home() {
   return (
@@ -17,9 +18,10 @@ export default function Home() {
       <MyServices/>
       <MyResume/>
       <MyWorks/>
+      {/* <MyPortfolio/> */}
       <ClientReviews/>
       <LatestBlogs/>
-      {/* <ContactMe/> */}
+      <ContactMe/>
     </div>
   );
 }

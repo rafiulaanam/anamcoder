@@ -15,6 +15,36 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.box{
+
+  background-position: top;
+  background-size: cover;
+  transition: ease-in-out 8s;
+  
+}
+.box:hover{
+  background-position: bottom;
+}
+.box1{
+  background: url('/assets/car.png');
+  background-position: top;
+  background-size: cover;
+}
+.box2{
+  background: url('/assets/devwave.png');
+  background-position: top;
+  background-size: cover;
+}
+.box3{
+  background: url('/assets/gym.png');
+  background-position: top;
+  background-size: cover;
+}
+.box4{
+  background: url('/assets/shop.png');
+  background-position: top;
+  background-size: cover;
+}
 
 body {
   color: rgb(var(--foreground-rgb));

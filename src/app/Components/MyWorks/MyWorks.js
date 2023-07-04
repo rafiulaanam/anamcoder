@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Title from "../../utils/Title/Title";
-import Image from "next/image";
+import MyPortfolio from "../MyPortfolio/MyPortfolio";
 
 const MyWorks = () => {
   return (
@@ -9,7 +9,9 @@ const MyWorks = () => {
       <Title title="work" mytitle="my work" />
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
-          <div className="p-4 md:w-1/3">
+          <MyPortfolio/>
+        
+          {/* <div className="p-4 md:w-1/3">
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <Image
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
@@ -143,7 +145,7 @@ const MyWorks = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

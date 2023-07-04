@@ -80,8 +80,8 @@ const ContactMe = () => {
                 // ref={form}
                 // onSubmit={handleSubmit(handleData)}
               >
-                {thanks === true ? (
-                
+                {/* {thanks === true ? ( */}
+{/*                 
                   <div class="flex items-center justify-center ">
       <div>
         <div class="flex flex-col items-center space-y-2">
@@ -102,18 +102,18 @@ const ContactMe = () => {
           </a>
         </div>
       </div>
-    </div>
-                ) : (
+    </div> */}
+                {/* ) : ( */}
                   <>
                     <div className="form-group mb-6">
                       <input
                         type="text"
                         name="user_name"
-                        {...register("user_name", {
-                          required: true,
-                          maxLength: 180,
+                        // {...register("user_name", {
+                        //   required: true,
+                        //   maxLength: 180,
                         
-                        })}
+                        // })}
                         className="form-control block
               w-full
               px-3
@@ -131,17 +131,17 @@ const ContactMe = () => {
                         id="exampleInput7"
                         placeholder="Name"
                       />
-                       {errors.user_name?.type === 'required' && <p className="text-red-400">Name is required</p>}
+                       {/* {errors.user_name?.type === 'required' && <p className="text-red-400">Name is required</p>} */}
                     </div>
                     <div className="form-group mb-6">
                       <input
                         name="user_email"
                         type="email"
-                        {...register("user_email", {
-                          required: true,
-                          pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/i,
+                        // {...register("user_email", {
+                        //   required: true,
+                        //   pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/i,
                           
-                        })}
+                        // })}
                         className="form-control block
               w-full
               px-3
@@ -159,17 +159,17 @@ const ContactMe = () => {
                         id="exampleInput8"
                         placeholder="Email address"
                       />
-                      {errors.user_email?.type === 'required' && <p className="text-red-400">Email is required</p>}
-                      {errors.user_email?.type === 'pattern' && <p className="text-red-400">Valid email is required</p>}
+                      {/* {errors.user_email?.type === 'required' && <p className="text-red-400">Email is required</p>}
+                      {errors.user_email?.type === 'pattern' && <p className="text-red-400">Valid email is required</p>} */}
                     </div>
                     <div className="form-group mb-6">
                       <textarea
-                        {...register("message", {
-                          required: true,
-                          minLength:4,
-                          maxLength: 100,
+                        // {...register("message", {
+                        //   required: true,
+                        //   minLength:4,
+                        //   maxLength: 100,
                           
-                        })}
+                        // })}
                         name="message"
                         className="
               form-control
@@ -192,25 +192,25 @@ const ContactMe = () => {
                         rows="3"
                         placeholder="Message"
                       ></textarea>
-                      {errors.message?.type === 'required' && <p className="text-red-400">Message is required</p>}
-                      {errors.message?.type === 'minLength' && <p className="text-red-400">Write at least 4 character word</p>}
+                      {/* {errors.message?.type === 'required' && <p className="text-red-400">Message is required</p>}
+                      {errors.message?.type === 'minLength' && <p className="text-red-400">Write at least 4 character word</p>} */}
                     </div>
 
-                    {sending === false ? (
+                    {/* {sending === false ? ( */}
                       <input
                         type="submit"
                         value="Send"
                         className="inline-flex items-center btnn black bg-[#72E2AE] border-0 py-3 px-5 focus:outline-none hover:bg-white rounded font-medium text-sm  text-black mt-4 md:mt-0"
                       />
-                    ) : (
-                      <input
+                    {/* ) : ( */}
+                      {/* <input
                         type="submit"
                         value="Sending..."
                         className="inline-flex items-center btnn black bg-[#72E2AE] border-0 py-3 px-5 focus:outline-none hover:bg-white rounded font-medium text-sm  text-black mt-4 md:mt-0"
-                      />
-                    )}
+                      /> */}
+                    {/* )} */}
                   </>
-                )}
+                {/* )} */}
               </form>
             </div>
           </div>
