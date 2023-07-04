@@ -10,7 +10,7 @@ const portfolio =[
     live_link:{href:"https://car-rental-ten.vercel.app/"},
     github_link:{href:"https://github.com/rafiulaanam"},
     tags:[ 'NextJs','TailWind CSS','DaisyUi'],
-    flex:'lg:flex-row-reverse',
+    flex:'lg:flex-row',
     box:"box1"
   },
   {
@@ -30,7 +30,7 @@ const portfolio =[
     live_link:{href:"https://gymate-iota.vercel.app/"},
     github_link:{href:"https://github.com/rafiulaanam"},
     tags:[ 'NextJs','TailWind CSS','DaisyUi'],
-    flex:'lg:flex-row-reverse',
+    flex:'lg:flex-row',
     box:"box3"
   },
   {
