@@ -10,7 +10,7 @@ const portfolio =[
     live_link:{href:"https://car-rental-ten.vercel.app/"},
     github_link:{href:"https://github.com/rafiulaanam"},
     tags:[ 'NextJs','TailWind CSS','DaisyUi'],
-    flex:'flex-row-reverse',
+    flex:'lg:flex-row-reverse',
     box:"box1"
   },
   {
@@ -20,7 +20,7 @@ const portfolio =[
     live_link:{href:"https://devwaveprogrammer.vercel.app/"},
     github_link:{href:"https://github.com/rafiulaanam"},
     tags:[ 'NextJs','TailWind CSS','DaisyUi'],
-    flex:'!flex-row-reverse',
+    flex:'lg:!flex-row-reverse',
     box:"box2"
   },
   {
@@ -30,7 +30,7 @@ const portfolio =[
     live_link:{href:"https://gymate-iota.vercel.app/"},
     github_link:{href:"https://github.com/rafiulaanam"},
     tags:[ 'NextJs','TailWind CSS','DaisyUi'],
-    flex:'flex-row-reverse',
+    flex:'lg:flex-row-reverse',
     box:"box3"
   },
   {
@@ -40,7 +40,7 @@ const portfolio =[
     live_link:{href:"https://minimalist-e-commerce.vercel.app/"},
     github_link:{href:"https://github.com/rafiulaanam"},
     tags:[ 'NextJs','TailWind CSS','DaisyUi'],
-    flex:'!flex-row-reverse',
+    flex:'lg:!flex-row-reverse',
     box:"box4"
   }
 ]
@@ -51,7 +51,7 @@ export default function MyPortfolio() {
     {
       
       portfolio.map(item=><div key={item.i} className=" container md:w-[80%] mx-auto mt-16 text-white">
-        <div className= {`card  lg:card-side  bg-base-100 shadow-xl lg:${item.flex}`}>
+        <div className= {`card  lg:card-side  bg-base-100 shadow-xl ${item.flex}`}>
           <div className={`m-5 p-5 lg:w-[50%] rounded-2xl box h-72 md:h-96 ${item.box} `}></div>
 
           <div className="card-body text-center lg:w-[50%]">
