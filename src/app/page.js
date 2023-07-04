@@ -1,3 +1,5 @@
+'use client'
+
 import AboutMe from "./components/AboutMe/AboutMe";
 import Banner from "./components/Banner/Banner";
 import ClientReviews from "./components/ClientReviews/ClientReviews";
