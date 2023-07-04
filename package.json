@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "git": "git add . && git commit -m'works-added' && git push"
+    "git": "git add . && git commit -m'info-added' && git push"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
