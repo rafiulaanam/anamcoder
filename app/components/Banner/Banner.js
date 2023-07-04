@@ -55,7 +55,7 @@ const Banner = () => {
                 Full-stack Web Developer
               </p>
             </div>
-            <p className="mt-4 text-md font-semibold text-gray-200 md:w-[70%] tracking-wide leading-7">
+            <p className="mt-4 text-md font-semibold text-gray-200 text-justify md:w-[70%] tracking-wide leading-7">
               A passionate Full Stack Software Developer 🚀 having a special
               interest in Frontend technologies and experience of building clean
               code and pixel perfect Web applications with JavaScript / Reactjs

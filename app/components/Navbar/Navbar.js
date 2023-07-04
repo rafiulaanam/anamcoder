@@ -126,14 +126,14 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <a href="/" className="ml-3 text-5xl font-bold text-[#72E2AE]">
+          <a href="/" className="ml-3 text-4xl md:text-5xl font-bold text-[#72E2AE]">
             ANAM.
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menuItems}</ul>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end items-center">
           <a
             href="https://www.linkedin.com/in/rafiulaanam/"
             target="_blank"
