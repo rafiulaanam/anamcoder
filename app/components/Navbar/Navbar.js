@@ -1,13 +1,17 @@
 "use client";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { FaBars } from 'react-icons/fa';
 
 import "./Navbar.css";
 import Button from "../../utils/Button/Button";
+import Drawer from "./Drawer";
+import DrawerData from "./DrawerData";
 // import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Navbar = () => {
   const [glossy, setGlass] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   // const scrollValue = document.documentElement.scrollTop;
   let scrollValue
@@ -20,118 +24,86 @@ const Navbar = () => {
     }
   };
   // window.addEventListener("scroll", changeScroll);
+const menu = [
+  {
+    id:1,
+    title:"HOME",
+    to: "Home"
 
-  const menuItems = (
-    <>
-      <li>
-        <Link
-          to="Header"
-          spy={true}
-          smooth={true}
-          offset={-130}
-          duration={1000}
-          className="mr-3 hover-underline-animation  font-medium text-sm text-white"
-        >
-          <span className="text-[#72E2AE]">01.</span> HOME
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="About"
-          spy={true}
-          smooth={true}
-          offset={-30}
-          duration={1000}
-          className="mr-3 hover-underline-animation font-medium text-sm text-white"
-        >
-          <span className="text-[#72E2AE]">02.</span> ABOUT
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="Resume"
-          spy={true}
-          smooth={true}
-          offset={-30}
-          duration={1000}
-          className="mr-3 hover-underline-animation font-medium text-sm text-white"
-        >
-          <span className="text-[#72E2AE]">03.</span> RESUME
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="Work"
-          spy={true}
-          smooth={true}
-          offset={-30}
-          duration={1000}
-          className="mr-3 hover-underline-animation font-medium text-sm text-white"
-        >
-          <span className="text-[#72E2AE]">04.</span> WORK
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="Blog"
-          spy={true}
-          smooth={true}
-          offset={-30}
-          duration={1000}
-          className="mr-3 hover-underline-animation font-medium text-sm text-white"
-        >
-          <span className="text-[#72E2AE]">05.</span> BLOG
-        </Link>
-      </li>
-      <li>
-        <Link
-          to="Contact"
-          spy={true}
-          smooth={true}
-          offset={-30}
-          duration={1000}
-          className="mr-3 hover-underline-animation font-medium text-sm text-white"
-        >
-          <span className="text-[#72E2AE]">06.</span> CONTACT
-        </Link>
-      </li>
-    </>
-  );
+  },
+  {
+    id:2,
+    title:"ABOUT",
+     to: "About"
+
+  },
+  {
+    id:3,
+    title:"RESUME",
+     to: "Resume"
+
+  },
+  {
+    id:4,
+    title:"WORK",
+     to: "Work"
+
+  },
+  {
+    id:5,
+    title:"BLOG",
+     to: "Blog"
+
+  },
+  {
+    id:6,
+    title:"CONTACT",
+     to: "Contact"
+
+  },
+]
+
 
   return (
     <div className={glossy ? "glossy " : "yy"}>
       <div className="navbar container mx-auto ">
         <div className="navbar-start">
-          <div className="dropdown">
-            <label tabindex="0" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              {menuItems}
-            </ul>
+          <div className="">
+          
+            <div className="block md:hidden">
+              <FaBars
+                className="block h-8 w-8"
+                aria-hidden="true"
+                onClick={() => setIsOpen(true)}
+              />
+              <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+              <DrawerData/>
+            </Drawer>
+            </div>
+            
           </div>
           <a href="/" className="ml-3 text-4xl md:text-5xl font-bold text-[#72E2AE]">
             ANAM.
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{menuItems}</ul>
+          <ul className="menu menu-horizontal px-1">
+            {
+              menu.map(item=><li key={item.i}>
+                <Link
+                  to={item.to}
+                  spy={true}
+                  smooth={true}
+                  offset={-30}
+                  duration={1000}
+                  className="mr-3 hover-underline-animation font-medium text-sm text-white"
+                >
+                  <span className="text-[#72E2AE] ">0{item.id}.</span> {item.title}
+                </Link>
+              </li>)
+            }
+            
+            </ul>
         </div>
         <div className="navbar-end items-center">
           <a
