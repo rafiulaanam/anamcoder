@@ -14,6 +14,7 @@ export default function Home() {
     <div>
       <Banner />
       <AboutMe />
+  
       <MyAllSkills />
       <MyServices/>
       <MyResume/>
